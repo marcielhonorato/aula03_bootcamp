@@ -6,13 +6,11 @@ quantidade = -16
 
 preco = -10.00
 
-
 if quantidade > 0 and preco > 0:
     print(f"Dados válidos")
 else: 
     print(f"Dados inválidos")
  
-
 #Exercício 2: Classificação de Dados de Sensor
 #Imagine que você está trabalhando com dados de sensores IoT. Os dados incluem medições de temperatura. Você precisa classificar cada leitura como 'Baixa', 'Normal' ou 'Alta'.
 #Considerando que:
