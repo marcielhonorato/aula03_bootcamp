@@ -15,19 +15,23 @@
 #Imagine que você está trabalhando com dados de sensores IoT. Os dados incluem medições de temperatura. Você precisa classificar cada leitura como 'Baixa', 'Normal' ou 'Alta'.
 #Considerando que: Temperatura < 18°C é 'Baixa' | Temperatura >= 18°C e <= 26°C é 'Normal' | Temperatura > 26°C é 'Alta'
 
-temperatura = 21
+    # temperatura = 21
 
-if temperatura < 18:
-    print(f"Temperatura Baixa")
-elif 18 <= temperatura <= 26:
-    print(f"Temperatura Normal")
-else:
-    print(f"Temperatura Alta")
+    # if temperatura < 18:
+    #     print(f"Temperatura Baixa")
+    # elif 18 <= temperatura <= 26:
+    #     print(f"Temperatura Normal")
+    # else:
+    #     print(f"Temperatura Alta")
 
 #Exercício 3: Filtragem de Logs por Severidade
 #Você está analisando logs de uma aplicação e precisa filtrar mensagens com severidade 'ERROR'.Dado um registro de log em formato de dicionário 
-# como log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}, escreva um programa que imprima a mensagem se a severidade for 'ERROR'.
+#como log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}, escreva um programa que imprima a mensagem se a severidade for 'ERROR'.
 
+log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}
+
+if log['level'] == 'ERROR':
+    print(log['message'] )
 
 #Exercício 4: Validação de Dados de Entrada
 #Antes de processar os dados de usuários em um sistema de recomendação, você precisa garantir que cada usuário tenha idade entre 18 e 65 anos e tenha fornecido um email válido. 
