@@ -51,9 +51,25 @@
 #Você está trabalhando em um sistema de detecção de fraude e precisa identificar transações suspeitas.Uma transação é considerada suspeita se o valor for superior a R$ 10.000 ou 
 #se ocorrer fora do horário comercial (antes das 9h ou depois das 18h). Dada uma transação como transacao = {'valor': 12000, 'hora': 20}, verifique se ela é suspeita.
 
-transacao = {'valor': 12000, 'hora': 20}
+    # transacao = {'valor': 12000, 'hora': 20}
 
-if transacao['valor'] > 10000 or (transacao['hora'] < 9 or transacao['hora'] > 18):
-    print("Transação suspeita")
-else:
-    print("Transação normal")
+    # if transacao['valor'] > 10000 or (transacao['hora'] < 9 or transacao['hora'] > 18):
+    #     print("Transação suspeita")
+    # else:
+    #     print("Transação normal")
+
+# #Exercício 6: Contagem de Palavras em Textos
+# Objetivo: Dado um texto, contar quantas vezes cada palavra única aparece nele.
+
+frase = "a raposa marrom salta sobre o cachorro preguiçoso, e o cachorro também salta sobe a raposa e corre"
+
+split_palavras = frase.split(" ")
+
+contador_palavras = {}
+
+for palavra in split_palavras:
+    if palavra in contador_palavras:
+        contador_palavras[palavra] += 1
+    else:
+        contador_palavras[palavra] = 1
+print(contador_palavras)
