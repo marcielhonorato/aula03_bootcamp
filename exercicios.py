@@ -77,9 +77,22 @@
 #7. Normalização de Dados
 #Objetivo: Normalizar uma lista de números para que fiquem na escala de 0 a 1.
 
-numeros = [10,20,30,40,50]
-max_num = max(numeros)
-min_num = min(numeros)
+    # numeros = [10,20,30,40,50]
+    # max_num = max(numeros)
+    # min_num = min(numeros)
 
-normalizados = [(x - min_num) / (max_num - min_num) for x in numeros]
-print(normalizados)
+    # normalizados = [(x - min_num) / (max_num - min_num) for x in numeros]
+    # print(normalizados)]
+
+#8 Filtragem de Dados Faltantes
+# Objetivo: Dada uma lista de dicionários representando dados de usuários, filtrar aqueles que têm um campo específico faltando.
+
+usuarios = [
+    {"nome": "Alice", "email": "alice@example.com"},
+    {"nome": "Bob", "email": ""},
+    {"nome": "Carol", "email": "carol@example.com"}
+]
+
+usuarios_validos = [x for x in usuarios if x["email"]]
+
+print(usuarios_validos)
