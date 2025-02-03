@@ -61,15 +61,25 @@
 # #Exercício 6: Contagem de Palavras em Textos
 # Objetivo: Dado um texto, contar quantas vezes cada palavra única aparece nele.
 
-frase = "a raposa marrom salta sobre o cachorro preguiçoso, e o cachorro também salta sobe a raposa e corre"
+    # frase = "a raposa marrom salta sobre o cachorro preguiçoso, e o cachorro também salta sobe a raposa e corre"
 
-split_palavras = frase.split(" ")
+    # split_palavras = frase.split(" ")
 
-contador_palavras = {}
+    # contador_palavras = {}
 
-for palavra in split_palavras:
-    if palavra in contador_palavras:
-        contador_palavras[palavra] += 1
-    else:
-        contador_palavras[palavra] = 1
-print(contador_palavras)
+    # for palavra in split_palavras:
+    #     if palavra in contador_palavras:
+    #         contador_palavras[palavra] += 1
+    #     else:
+    #         contador_palavras[palavra] = 1
+    # print(contador_palavras)
+
+#7. Normalização de Dados
+#Objetivo: Normalizar uma lista de números para que fiquem na escala de 0 a 1.
+
+numeros = [10,20,30,40,50]
+max_num = max(numeros)
+min_num = min(numeros)
+
+normalizados = [(x - min_num) / (max_num - min_num) for x in numeros]
+print(normalizados)
