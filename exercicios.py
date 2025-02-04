@@ -109,19 +109,31 @@
 # 10. Agregação de Dados por Categoria
 # Objetivo: Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
 
-vendas = [
-    {"categoria": "eletrônicos", "valor": 1200},
-    {"categoria": "livros", "valor": 200},
-    {"categoria": "eletrônicos", "valor": 800}
-]
+# vendas = [
+#     {"categoria": "eletrônicos", "valor": 1200},
+#     {"categoria": "livros", "valor": 200},
+#     {"categoria": "eletrônicos", "valor": 800}
+# ]
 
-vlr_total_categoria = {}
+# vlr_total_categoria = {}
 
-for venda in vendas:
-    categoria = venda["categoria"]    
-    valor = venda["valor"]
-    if categoria in vlr_total_categoria:
-        vlr_total_categoria[categoria] += valor
-    else:
-        vlr_total_categoria[categoria] = valor
-print(vlr_total_categoria)
+# for venda in vendas:
+#     categoria = venda["categoria"]    
+#     valor = venda["valor"]
+#     if categoria in vlr_total_categoria:
+#         vlr_total_categoria[categoria] += valor
+#     else:
+#         vlr_total_categoria[categoria] = valor
+# print(vlr_total_categoria)
+
+# 1. Leitura de Dados até Flag
+# Objetivo: Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
+
+dados = []
+entrada = ""
+
+while entrada.lower() != "sair":
+    entrada = input("Digite um valor (ou 'sair' para terminar): ")
+    if entrada != 'sair':
+        dados.append(entrada)
+print(f"Valores digitados: {dados}")
