@@ -126,14 +126,24 @@
 #         vlr_total_categoria[categoria] = valor
 # print(vlr_total_categoria)
 
-# 1. Leitura de Dados até Flag
+# 11. Leitura de Dados até Flag
 # Objetivo: Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
 
-dados = []
-entrada = ""
+    # dados = []
+    # entrada = ""
 
-while entrada.lower() != "sair":
-    entrada = input("Digite um valor (ou 'sair' para terminar): ")
-    if entrada != 'sair':
-        dados.append(entrada)
-print(f"Valores digitados: {dados}")
+    # while entrada.lower() != "sair":
+    #     entrada = input("Digite um valor (ou 'sair' para terminar): ")
+    #     if entrada != 'sair':
+    #         dados.append(entrada)
+    # print(f"Valores digitados: {dados}")
+
+# 12. Validação de Entrada
+# Objetivo: Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
+
+numero = int(input("Digite um numero de 1 a 10: "))
+
+while numero < 1 or numero > 10:
+    print(f"Número fora do intervalo")
+    numero = int(input("Digite um numero de 1 a 10:"))
+print("Número Válido!")
