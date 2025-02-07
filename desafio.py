@@ -1,13 +1,13 @@
 CONSTANTE_BONUS = 1000
 
-nome_valido = False
-salario_valido = False
-bonus_valido = False
+nome_valido : bool = False
+salario_valido : bool = False
+bonus_valido : bool = False
 
 while nome_valido is not True:
 # Solicita ao usuário que digite seu nome
     try:
-        nome_usuario = input("Digite seu nome: ")
+        nome_usuario : str = input("Digite seu nome: ")
 
         # Verifica se o nome está vazio
         if len(nome_usuario) == 0:
@@ -29,7 +29,7 @@ while nome_valido is not True:
 # Solicita ao usuário que digite o valor do seu salário Converte a entrada para um número de ponto flutuante
 while salario_valido is not True:
     try:
-        salario_usuario = float(input("Digite o valor do salário: "))
+        salario_usuario : float = float(input("Digite o valor do salário: "))
         if salario_usuario < 0:
             print("O valor digitado precisa ser positivo")
         else:
@@ -41,7 +41,7 @@ while salario_valido is not True:
 # Solicita ao usuário que digite o valor do bônus recebido Converte a entrada para um número de ponto flutuante
 while bonus_valido is not True:
     try:
-        bonus_usuario = float(input("Digite o valor do bônus em %: "))
+        bonus_usuario : float = float(input("Digite o valor do bônus em %: "))
         if bonus_usuario < 0:
             print("O valor digitado precisa ser positivo")
         else:
@@ -51,7 +51,7 @@ while bonus_valido is not True:
 
 # 4) Calcule o valor do bônus final
 
-valor_do_bonus = CONSTANTE_BONUS + (salario_usuario * bonus_usuario)
+valor_do_bonus : float = CONSTANTE_BONUS + (salario_usuario * bonus_usuario)
 
 # Imprima cálculo do KPI para o usuário
 
